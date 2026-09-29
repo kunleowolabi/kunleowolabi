@@ -23,6 +23,26 @@ just demos.
 
 ---
 
+## Rete — Nigeria electricity intelligence platform
+
+Live platform measuring Nigeria's electricity supply-demand gap: hourly
+generation and DISCO delivery data (scraped, loaded, and served automatically),
+a modelled demand ceiling from a disequilibrium estimation model, and a spatial
+reference layer for the national grid — plants, substations, transmission
+lines, and DISCO franchise boundaries.
+
+**[Live platform →](https://explorerete.com)** · **[Source →](https://github.com/kunleowolabi/rete)**
+
+*Terraform · AWS (Aurora Serverless / PostGIS, Lambda, API Gateway, CloudFront)
+· React · MapLibre*
+
+The research underneath it:
+
+- **[Suppressed demand estimation](https://github.com/kunleowolabi/disequilibrium_model_paper)** — a maximum-likelihood disequilibrium model on 154 DISCO-quarters of NERC regulatory data. Finds a 1.91 GW gap between observed and unconstrained demand on Nigeria's connected network.
+- **[Cross-country consumption allocation](https://github.com/kunleowolabi/electricity-allocation)** — allocating national electricity consumption across subnational regions using population and satellite nighttime lights. Trained on four countries, validated on a fifth held out entirely.
+
+---
+
 ## Selected public projects
 
 These are the projects whose code I can share openly. Each links to source; some
@@ -67,13 +87,14 @@ infrastructure for industrial and utility sites. Those repositories are private 
 covered by contractual agreements — my CV covers them, and I'm happy to talk through
 the work in more detail.
 
-## Currently building
+## What's next for Rete
 
-Working toward an end-to-end energy-demand intelligence platform for Nigeria's grid —
-combining satellite (nighttime-lights) demand modelling, a spatial backend, custom
-IIoT reference probes for ground-truth voltage/telemetry, and time-series forecasting.
-It's the kind of project this whole profile has been building toward: hardware, data, and
-software in one system.
+The platform currently covers the connected network's supply side and a
+NERC-derived demand estimate. Open next: real franchise boundaries for the
+DISCOs currently approximated at state level, custom IIoT reference probes
+for ground-truth voltage/telemetry at the distribution edge, and extending
+the demand model to forecast rather than only estimate the present. Issues
+and contributions on any of this are welcome on the repo.
 
 ---
 
