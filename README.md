@@ -38,7 +38,7 @@ lines, and DISCO franchise boundaries.
 
 The research underneath it:
 
-- **[Suppressed demand estimation](https://github.com/kunleowolabi/disequilibrium_model_paper)** — a maximum-likelihood disequilibrium model on 154 DISCO-quarters of NERC regulatory data. Finds a 1.91 GW gap between observed and unconstrained demand on Nigeria's connected network.
+- **[Suppressed demand estimation](https://github.com/kunleowolabi/disequilibrium_model_paper)** — a maximum-likelihood disequilibrium model on 154 DISCO-quarters of NERC regulatory data. Estimates a 1.91 GW gap between observed and unconstrained demand on Nigeria's connected network.
 - **[Cross-country consumption allocation](https://github.com/kunleowolabi/electricity-allocation)** — allocating national electricity consumption across subnational regions using population and satellite nighttime lights. Trained on four countries, validated on a fifth held out entirely.
 
 ---
